@@ -5,7 +5,7 @@ import com.example.HWPatterns.interfaces.iObserver;
 
 public class AspiringActor implements iObserver {
     String name;
-    double fee;
+    double fee; //гонорар
 
     public AspiringActor(String name){
         this.name = name;
