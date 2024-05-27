@@ -14,22 +14,25 @@ public class HwPatternsApplication {
 
         iPublisher actorsAgency = new ActorsAgency();
 
+        // Создание развлекательных компаний
         EntertainmentCompany netflix = new EntertainmentCompany(actorsAgency, "Netflix", 5000000);
         EntertainmentCompany columbiaPictures = new EntertainmentCompany(actorsAgency, "Columbia Pictures", 100000);
 
+        // Создание актеров
         MovieStar depp = new MovieStar("Depp");
     	Actor schwimmer= new Actor("Schwimmer");
     	AspiringActor lee = new AspiringActor("Lee");
 
+        // Регистрация актеров в актерском агентстве
         actorsAgency.registerObserver(depp);
         actorsAgency.registerObserver(schwimmer);
         actorsAgency.registerObserver(lee);
 
-    for (double i = 0; i < 5; i++) {
-        netflix.needActor();
-        columbiaPictures.needActor();
+        // Запрос актеров
+        for (double i = 0; i < 5; i++) {
+            netflix.needActor();
+            columbiaPictures.needActor();
+        }
     }
-}
-
 }
 

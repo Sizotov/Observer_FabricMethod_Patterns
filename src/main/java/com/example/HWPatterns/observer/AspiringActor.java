@@ -12,7 +12,7 @@ public class AspiringActor implements iObserver {
         fee = 0;
     }
 
-    // Студент постоянно ищет где лучше
+
     @Override
     public void receiveOffer(String nameCompany, double fee) {
         if (this.fee < fee) {

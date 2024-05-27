@@ -12,6 +12,10 @@ public class Actor implements iObserver {
 
         this.name = name;
     }
+
+    //если случайное значение nextBoolean() равно true, то
+    // актёр получает оффер, если равно false,
+    // то актёр выражает недовольство и отказ от предложения
     @Override
     public void receiveOffer(String nameCompany, double fee) {
         if (new Random().nextBoolean()){

@@ -8,7 +8,7 @@ public class EntertainmentCompany {
     iPublisher actorsAgency;
     String nameCompany;
     Random rnd;
-    double maxFee;
+    double maxFee; //максимальный гонорар
 
     public EntertainmentCompany(iPublisher actorsAgency, String nameCompany, double maxFee){
         this.actorsAgency = actorsAgency;
