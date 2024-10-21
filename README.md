@@ -5,10 +5,12 @@
 
 Стек:
 
-- Java (JDK 17)
+- Java (JDK 21)
 - Spring Boot
-- Spring MVC
+- Spring Web
 - Spring Data JPA
+- Spring Test
+- Micrometer
 - H2 Database
 - Lombok
 - Maven
